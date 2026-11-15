@@ -132,6 +132,23 @@ The expected toolchain currently includes:
 Exact software versions, dependencies, and setup instructions will be added
 when the first executable models and scripts are published.
 
+### Python environment
+
+Python 3.12 or newer is recommended for data analysis, control-system studies,
+plotting, and test automation. Create and populate a local virtual environment
+with:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The `.venv/` directory is local and intentionally excluded from Git. PLECS and
+the Plexim RT Box software are external tools and are not installed through
+this requirements file.
+
 ## Reproducing the work
 
 The project is not yet at a reproducible release stage. Future simulation and

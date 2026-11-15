@@ -1,0 +1,25 @@
+# Numerical computing and scientific analysis
+numpy>=2.0,<3.0
+scipy>=1.14,<2.0
+pandas>=2.2,<4.0
+sympy>=1.13,<2.0
+
+# Control-system modelling
+control>=0.10,<1.0
+
+# Data formats and configuration
+h5py>=3.11,<4.0
+openpyxl>=3.1,<4.0
+PyYAML>=6.0,<7.0
+
+# Plotting
+matplotlib>=3.9,<4.0
+seaborn>=0.13,<1.0
+
+# Interactive analysis
+jupyterlab>=4.0,<5.0
+ipykernel>=6.0,<8.0
+
+# Code quality and tests
+pytest>=8.0,<10.0
+ruff>=0.9,<1.0
