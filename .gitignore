@@ -1,0 +1,60 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Local Codex and credential directories
+.agents/
+.aws/
+.codex/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging and build outputs
+build/
+dist/
+*.egg-info/
+
+# VS Code local settings
+.vscode/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Office temporary and lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# General temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
