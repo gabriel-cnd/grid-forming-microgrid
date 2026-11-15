@@ -89,8 +89,9 @@ Planned research topics include:
 
 ## Repository structure
 
-The repository will be expanded progressively. Directories will be created only
-when they are needed.
+The repository is organized by engineering responsibility. Each top-level
+directory contains a short README describing its scope; specialized
+subdirectories are populated progressively as the project develops.
 
 ```text
 .
