@@ -1,10 +1,10 @@
-# Grid-Forming Microgrid Unit for Critical Loads
+# Study and Validation of a Grid-Forming Microgrid Unit for Critical Loads
 
 [![Project status: early development](https://img.shields.io/badge/status-early%20development-orange)](#project-status)
 [![Documentation: in progress](https://img.shields.io/badge/documentation-in%20progress-blue)](#documentation)
 
-Design, simulation, and Hardware-in-the-Loop (HIL) validation of a decentralized
-grid-forming power unit for critical loads.
+Design, simulation, and Hardware-in-the-Loop (HIL) validation of a grid-forming
+microgrid unit for supplying critical loads.
 
 > [!IMPORTANT]
 > This repository documents an ongoing thesis project. Models, interfaces,
@@ -14,12 +14,15 @@ grid-forming power unit for critical loads.
 
 ## Overview
 
-This project investigates a decentralized power unit combining photovoltaic
-generation, a power converter, and energy storage. Its purpose is to improve
-the resilience of critical services such as hospitals, cold storage, and
-emergency communications during grid disturbances and outages.
+![Conceptual illustration of interconnected photovoltaic grid-forming microgrid units supplying a critical load](docs/assets/grid-forming-microgrid-overview.png)
 
-Unlike a conventional grid-following inverter, which disconnects when the
+This project investigates a decentralized power unit combining photovoltaic
+generation, a grid-forming micro-inverter, and energy storage. During normal
+operation, the unit operates in parallel with the utility grid. When the grid
+is disturbed or unavailable, it takes over the supply of critical services
+such as hospitals, cold storage, and emergency communications.
+
+Unlike a conventional grid-following micro-inverter, which disconnects when the
 utility grid is lost, the proposed unit should be able to:
 
 - transition from grid-connected to islanded operation;
@@ -70,9 +73,9 @@ to be determined.
 
 ```text
 PV source ─┐
-           ├── DC link ── Grid-forming inverter ── Output filter ── AC bus
-Storage ───┘                                                    ├── Critical loads
-                                                                └── Utility grid
+           ├── DC link ── Grid-forming micro-inverter ── Output filter ── AC bus
+Storage ───┘                                                          ├── Critical loads
+                                                                      └── Utility grid
 ```
 
 Planned research topics include:
